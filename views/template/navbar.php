@@ -20,9 +20,9 @@
                             Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="a.php">A</a></li>
-                            <li><a class="dropdown-item" href="b.php">B</a></li>
-                            <li><a class="dropdown-item" href="c.php">C</a></li>
+                        <li><a class="dropdown-item" href="../latihan/latihan1.php">Latihan 1</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan2.php">Latihan 2</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan3.php">Latihan 3</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
