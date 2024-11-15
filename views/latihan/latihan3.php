@@ -5,6 +5,9 @@ require_once '../template/navbar.php';
 ?>
 
 <!-- awal dari isi body -->
+
+
+
 <table border="1" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
