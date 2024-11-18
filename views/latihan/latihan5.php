@@ -6,7 +6,7 @@ require_once '../template/navbar.php';
 
 <!-- awal dari isi body -->
 
-<h1>Latihan Menampilkan Data Dari Tabel User Dan Urutkan Data Berdasarkan Nama User Dari Yang Terkecil Sampai Ke Terbesar</h1>
+<h1>Latihan Menampilkan Data Dari Tabel User</h1>
 
 <table border="1" cellpadding="10" cellspacing="0">
             <thead>
@@ -21,11 +21,12 @@ require_once '../template/navbar.php';
             <tbody>
                 <?php
                 $no = 1;
-                foreach ($latihan->latihan2() as $data) :
+                foreach ($latihan->latihan5() as $data) :
                     $tanggal_sekarang = new DateTime();
                     $tanggal_lahir = new DateTime($data->tanggallahir_user);
                     $umur = $tanggal_sekarang->diff($tanggal_lahir);
                         // Menurangi tanggal sekarang dengan tanggal lahir
+                        // Lebih gampang nya untuk menghitung umur
                 ?>
                     <tr>
                         <td><?= $no++; ?></td>

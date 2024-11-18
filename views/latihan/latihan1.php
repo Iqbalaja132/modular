@@ -26,6 +26,7 @@ require_once '../template/navbar.php';
                     $tanggal_lahir = new DateTime($data->tanggallahir_user);
                     $umur = $tanggal_sekarang->diff($tanggal_lahir);
                         // Menurangi tanggal sekarang dengan tanggal lahir
+                        // Lebih gampang nya untuk menghitung umur
                 ?>
                     <tr>
                         <td><?= $no++; ?></td>

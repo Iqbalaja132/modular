@@ -23,6 +23,10 @@
                         <li><a class="dropdown-item" href="../latihan/latihan1.php">Latihan 1</a></li>
                             <li><a class="dropdown-item" href="../latihan/latihan2.php">Latihan 2</a></li>
                             <li><a class="dropdown-item" href="../latihan/latihan3.php">Latihan 3</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan4.php">Latihan 4</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan5.php">Latihan 5</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan6.php">Latihan 6</a></li>
+                            <li><a class="dropdown-item" href="../latihan/latihan7.php">Latihan 7</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
