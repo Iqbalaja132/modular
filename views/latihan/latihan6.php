@@ -6,7 +6,7 @@ require_once '../template/navbar.php';
 
 <!-- awal dari isi body -->
 
-<h1>Latihan Menampilkan Data Dari Tabel User</h1>
+<h1>Latihan Menampilkan Data Dari Tabel User Dan Tampilkan Data User Yang Memiliki Bulan Lahir Febuary</h1>
 
 <table border="1" cellpadding="10" cellspacing="0">
             <thead>
