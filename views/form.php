@@ -70,10 +70,11 @@
 <body>
   <center>
     <h2>Tambah User</h2>
-    <form action="hasil_form.php" method="post">
+    <form action="../controllers/c_user.php?aksi=tambah" method="post">
       <table>
         <tr>
         <td><label for="username">Username:</label></td>
+        <input type="text" id="username" name="id_user" hidden>
         <td><input type="text" name="username" id="username" required></td>
         </tr>
         <tr>
@@ -108,7 +109,7 @@
         <td><input type="date" name="tanggallahir_user" id="tanggallahir_user" required></td>
         </tr>
         <tr>
-          <td><button type="submit">Submit</button></td>
+          <td><button type="submit" name="tambah">Submit</button></td>
       </tr>
         </table>
     </form>

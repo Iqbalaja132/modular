@@ -34,4 +34,28 @@ class user
     }
     
   }
+
+  // membuat fungsi untuk menambahkan data user dari form yang kita buat
+  // parameter, argumennya di c_user
+  function tambah_user($id, $username,$email,$password,$nama,$alamat,$jk,$tempatlahir, $tanggallahir){
+    $conn = new koneksi();
+    $sql = "INSERT INTO user VALUES ('$id', '$username','$email','$password','$nama','$alamat','$jk','$tempatlahir', '$tanggallahir')";
+    $query = mysqli_query($conn->koneksi,$sql);
+
+    if ($query) {
+      echo "<script>alert('data berhasil ditambahkan'), window.location='../views/latihan/latihan7.php'</script>";
+    } else {
+      echo "<script>alert('data gagal ditambahkan'), window.location='../views/form.php'</script>";
+    }
+    
+  } 
 }
+
+// kisi kisi pemograman (18 soal, literasi dan numerasi)
+
+// variabel dan tipe data
+// operator
+// tipe data
+// struktur kontrol
+// oop (funtion, class, propeti)
+// form
