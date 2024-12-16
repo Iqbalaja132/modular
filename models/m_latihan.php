@@ -211,6 +211,26 @@ class latihan
       echo "Data pada tabel user kosong";
     }
   }
+
+  function tampil_data_byid($id){
+    $conn = new koneksi();
+    $sql = "SELECT *    FROM user WHERE id_user = $id";
+  
+    $query = mysqli_query($conn->koneksi,$sql);
+  
+    if ($query-> num_rows > 0) {
+      while($data = mysqli_fetch_object($query)){
+        $result[] = $data;
+      }
+      return $result;
+    } else {
+      echo "Tidak Ada Data";
+    }
+  }
+
+function ubah_data(){
+  
+}
 }
 
 
