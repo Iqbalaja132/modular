@@ -43,7 +43,7 @@ class user
     $query = mysqli_query($conn->koneksi,$sql);
 
     if ($query) {
-      echo "<script>alert('data berhasil ditambahkan'), window.location='../views/latihan/latihan7.php'</script>";
+      echo "<script>alert('data berhasil ditambahkan'), window.location='../views/dashboard.php'</script>";
     } else {
       echo "<script>alert('data gagal ditambahkan'), window.location='../views/form.php'</script>";
     }
