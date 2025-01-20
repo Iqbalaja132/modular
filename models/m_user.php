@@ -51,7 +51,7 @@ class user
 
   function tampil_data_byid($id){
     $conn = new koneksi();
-    $sql = "SELECT *    FROM user WHERE id_user = $id";
+    $sql = "SELECT * FROM user WHERE id_user = $id";
   
     $query = mysqli_query($conn->koneksi,$sql);
   

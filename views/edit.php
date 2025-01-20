@@ -78,7 +78,7 @@ include_once '../controllers/c_latihan.php';
 <body>
   <center>
     <h2>Edit User</h2>
-    <form action="../controllers/c_user.php?aksi=tambah" method="post">
+    <form action="../controllers/c_user.php?aksi=update" method="post">
       <table>
         <?php
 

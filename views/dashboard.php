@@ -40,7 +40,7 @@ require_once 'template/navbar.php';
                             <center>
                                 <a href="edit.php?id=<?= $data->id_user ?>">
                                     <button type="button" class="btn btn-round btn-primary">Edit</button></a>
-                                <a onclick="return confrim('Apakah yakin data akan di hapus')" href=""><button type="button" name="hapus" class="btn btn-round btn-danger">Hapus</button></a>
+                                <a onclick="return confirm('Apakah yakin data akan di hapus')" href="../controllers/c_user.php?id<?= $data->id_user ?> &aksi=hapus"><button type="button" name="hapus" class="btn btn-round btn-danger">Hapus</button></a>
                             </center>
                         </td>
                     </tr>
