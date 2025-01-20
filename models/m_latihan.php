@@ -1,7 +1,7 @@
 <?php
 
 // Memanggil file c_koneksi yang ada pada folder controllers
-include_once '../../controllers/c_koneksi.php';
+include_once '../controllers/c_koneksi.php';
 
 class latihan
 {
