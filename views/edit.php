@@ -9,7 +9,7 @@ include_once '../controllers/c_latihan.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Data</title>
+  <title>Edit Data</title>
   <style>
             body {
             font-family: Arial, sans-serif;
@@ -77,7 +77,7 @@ include_once '../controllers/c_latihan.php';
 </head>
 <body>
   <center>
-    <h2>Tambah User</h2>
+    <h2>Edit User</h2>
     <form action="../controllers/c_user.php?aksi=tambah" method="post">
       <table>
         <?php
