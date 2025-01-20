@@ -1,7 +1,7 @@
 <?php
 
 // Memanggil file c_koneksi yang ada pada folder controllers
-include_once '../../controllers/c_koneksi.php';
+include_once '../controllers/c_koneksi.php';
 
 class latihan
 {
@@ -214,6 +214,7 @@ class latihan
 
   function tampil_data_byid($id){
     $conn = new koneksi();
+
     $sql = "SELECT *    FROM user WHERE id_user = $id";
   
     $query = mysqli_query($conn->koneksi,$sql);
