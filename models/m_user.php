@@ -65,6 +65,31 @@ class user
     }
   }
   
+  function ubah_user($id, $username, $email, $password, $nama, $alamat, $jk, $tempatlahir, $tanggallahir)
+    {
+        $conn = new koneksi();
+        // var_dump($id, $username, $email, $password, $nama, $alamat, $jk, $tempatlahir, $tanggallahir);
+       $sql = "UPDATE user SET username = '$username', email = '$email', password = '$password', nama_user = '$nama', alamat_user = '$alamat', jenis_kelamin = '$jk', tempatlahir_user = '$tempatlahir', tanggallahir_user = '$tanggallahir' WHERE id_user = '$id' ";
+
+        $query = mysqli_query($conn->koneksi, $sql);
+
+        if ($query) {
+           echo "<script>alert('Data Berhasil Di Ubah');window.location='../views/dashboard.php'</script>";
+        } else {
+           echo "<script>alert('Data Tidak Berhasil Di Ubah');window.location='../views/edit.php'</script>";
+        }
+    }
+
+    function hapus_user($id)
+    {
+        $conn = new koneksi();
+
+        $query = "DELETE FROM user WHERE id_user = $id";
+
+        mysqli_query($conn->koneksi, $query);
+
+        header("location:../views/dashboard.php");
+    }
 }
 
 // kisi kisi pemograman (18 soal, literasi dan numerasi)

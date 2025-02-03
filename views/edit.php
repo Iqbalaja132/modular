@@ -1,6 +1,8 @@
 <?php
 
-include_once '../controllers/c_latihan.php';
+// include_once '../controllers/c_latihan.php';
+include_once "../models/m_user.php";
+$user = new user();
 
 ?>
 
@@ -82,12 +84,12 @@ include_once '../controllers/c_latihan.php';
       <table>
         <?php
 
-        foreach ($latihan->tampil_data_byid($_GET['id']) as $data ) :
+        foreach ($user->tampil_data_byid($_GET['id']) as $data ) :
 
         ?>
         <tr>
         <td><label for="username">Username:</label></td>
-        <input type="text" id="username" name="id_user" hidden>
+        <input type="text" id="username" name="id_user" value="<?= $data->id_user ?>" hidden>
         <td><input type="text" name="username" id="username" value="<?= $data->username?>"></td>
         </tr>
         <tr>
