@@ -22,14 +22,8 @@ try {
       $jk = $_POST['jenis_kelamin'];
       $tempatlahir = $_POST['tempatlahir_user'];
       $tanggallahir = $_POST['tanggallahir_user'];
-
-      // mengecek apakah aksi yang bernilai tambah 
-      if ($_GET['aksi'] == 'tambah') {
-        // memanggil fungsi tambah_user yang ada dalam model user 
-        $user->tambah_user($id, $username, $email, $password, $nama, $alamat, $jk, $tempatlahir, $tanggallahir);
-
-        // mengecek apakah aksi yang bernilai update
-      } elseif ($_GET['aksi'] == 'update') {
+      
+      if ($_GET['aksi'] == 'update') {
         // memanggil fungsi update_user yang ada dalam model user 
         $user->ubah_user($id, $username, $email, $password, $nama, $alamat, $jk, $tempatlahir, $tanggallahir);
         // var_dump($id, $username, $email, $password, $nama, $alamat, $jk, $tempatlahir, $tanggallahir);
